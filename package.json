@@ -1,0 +1,22 @@
+{
+  "name": "06-apiprodutousuario",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u00000\u00006\u0000-\u0000a\u0000p\u0000i\u0000P\u0000r\u0000o\u0000d\u0000u\u0000t\u0000o\u0000U\u0000s\u0000u\u0000a\u0000r\u0000i\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KauanLopes25/06-apiProdutoUsuario.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KauanLopes25/06-apiProdutoUsuario/issues"
+  },
+  "homepage": "https://github.com/KauanLopes25/06-apiProdutoUsuario#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
