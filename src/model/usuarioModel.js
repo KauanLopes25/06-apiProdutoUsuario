@@ -30,8 +30,13 @@ const findById = (id) => {
     return users.find(user => user.id === id)
 }
 
+// Função para buscar um usuário por nome
+const findByName = (name) => {
+    return users.find(user => user.name === name)
+}
 
 module.exports = {
     findAll,
-    findById
+    findById,
+    findByName
 }

@@ -44,7 +44,25 @@ const getUserById = (req, res) => {
     }
 }
 
+const getUserByName = (req, res) => {
+
+    // Pegando o id que foi enviado na requisicao
+    const name = (req.params.nome)
+
+    // Chamando o metodo findById do userModel
+    const user = userModel.findByName(name)
+
+    if(user){
+        // Responder com status code de 200 (Sucesso!)
+        //e devolver os dados do usuario em forma json
+        res.status(200).json(user)
+    } else{
+        res.status(404).json({ mensagem: 'Usuário não encontrado no banco de dados!'})
+    }
+}
+
 module.exports = {
     getAllUsers,
-    getUserById
+    getUserById,
+    getUserByName
 }

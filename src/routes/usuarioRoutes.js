@@ -30,4 +30,7 @@ router.get('/', userController.getAllUsers)
 // 2° Rota para obter dados de um usuario por ID
 router.get('/:id', userController.getUserById)
 
+// 3° Rota para obter dados de um usuario por ID
+router.get('/:nome', userController.getUserByName)
+
 module.exports = router
