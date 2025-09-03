@@ -1,0 +1,93 @@
+[
+    {
+      "id": 1,
+      "nome": "Maria Fernanda Silva",
+      "email": "maria.silva@example.com",
+      "telefone": "(11) 91234-5678",
+      "endereco": "Rua das Flores, 120 - Jardim Paulista, São Paulo - SP, 01412-000",
+      "dataCadastro": "2025-09-01T10:30:00Z",
+      "ativo": true
+    },
+    {
+      "id": 2,
+      "nome": "João Pedro Oliveira",
+      "email": "joao.oliveira@example.com",
+      "telefone": "(21) 99876-5432",
+      "endereco": "Av. Atlântica, 890 - Copacabana, Rio de Janeiro - RJ, 22070-000",
+      "dataCadastro": "2025-08-28T15:45:00Z",
+      "ativo": true
+    },
+    {
+      "id": 3,
+      "nome": "Carla Menezes",
+      "email": "carla.menezes@example.com",
+      "telefone": "(31) 98765-4321",
+      "endereco": "Rua Minas Gerais, 450 - Savassi, Belo Horizonte - MG, 30140-130",
+      "dataCadastro": "2025-07-15T09:10:00Z",
+      "ativo": false
+    },
+    {
+      "id": 4,
+      "nome": "Rafael Costa Souza",
+      "email": "rafael.costa@example.com",
+      "telefone": "(41) 99888-7766",
+      "endereco": "Rua XV de Novembro, 55 - Centro, Curitiba - PR, 80020-310",
+      "dataCadastro": "2025-06-22T18:20:00Z",
+      "ativo": true
+    },
+    {
+      "id": 5,
+      "nome": "Beatriz Lima Rocha",
+      "email": "beatriz.lima@example.com",
+      "telefone": "(85) 98700-2233",
+      "endereco": "Av. Beira Mar, 3000 - Meireles, Fortaleza - CE, 60165-121",
+      "dataCadastro": "2025-05-30T14:00:00Z",
+      "ativo": true
+    },
+    {
+      "id": 6,
+      "nome": "Gustavo Henrique Almeida",
+      "email": "gustavo.almeida@example.com",
+      "telefone": "(19) 99677-4455",
+      "endereco": "Rua Barão de Itapura, 789 - Guanabara, Campinas - SP, 13020-432",
+      "dataCadastro": "2025-05-15T11:45:00Z",
+      "ativo": true
+    },
+    {
+      "id": 7,
+      "nome": "Ana Carolina Torres",
+      "email": "ana.torres@example.com",
+      "telefone": "(71) 98555-1122",
+      "endereco": "Rua Chile, 210 - Comércio, Salvador - BA, 40020-000",
+      "dataCadastro": "2025-04-27T09:35:00Z",
+      "ativo": false
+    },
+    {
+      "id": 8,
+      "nome": "Lucas Martins Ferreira",
+      "email": "lucas.ferreira@example.com",
+      "telefone": "(51) 99811-3344",
+      "endereco": "Av. Ipiranga, 4000 - Partenon, Porto Alegre - RS, 90610-000",
+      "dataCadastro": "2025-03-18T16:55:00Z",
+      "ativo": true
+    },
+    {
+      "id": 9,
+      "nome": "Patrícia Gomes Andrade",
+      "email": "patricia.andrade@example.com",
+      "telefone": "(27) 98765-8877",
+      "endereco": "Av. Nossa Senhora da Penha, 1234 - Santa Lúcia, Vitória - ES, 29056-250",
+      "dataCadastro": "2025-02-20T12:25:00Z",
+      "ativo": true
+    },
+    {
+      "id": 10,
+      "nome": "Felipe Ramos Duarte",
+      "email": "felipe.ramos@example.com",
+      "telefone": "(62) 99123-5566",
+      "endereco": "Rua T-63, 500 - Setor Bueno, Goiânia - GO, 74230-120",
+      "dataCadastro": "2025-01-05T08:40:00Z",
+      "ativo": false
+    }
+  ]
+  
