@@ -27,4 +27,7 @@ const userController = require('..//controller/usuarioController')
 // 1° Rota para obter todos os usuarios
 router.get('/', userController.getAllUsers)
 
+// 2° Rota para obter dados de um usuario por ID
+router.get('/:id', userController.getUserById)
+
 module.exports = router
