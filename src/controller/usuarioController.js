@@ -44,12 +44,13 @@ const getUserById = (req, res) => {
     }
 }
 
+// Método do controlador para obter um usuário por nome
 const getUserByName = (req, res) => {
 
     // Pegando o nome que foi enviado na requisicao
     const nome = (req.params.nome)
 
-    // Chamando o metodo findById do userModel
+    // Chamando o metodo findByName do userModel
     const user = userModel.findByName(nome)
 
     if(user){
