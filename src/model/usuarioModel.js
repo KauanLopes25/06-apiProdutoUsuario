@@ -32,7 +32,7 @@ const findById = (id) => {
 
 // Função para buscar um usuário por nome
 const findByName = (name) => {
-    return users.find(user => user.name === name)
+    return users.find(user => user.nome === nome)
 }
 
 module.exports = {
