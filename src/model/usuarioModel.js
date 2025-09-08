@@ -25,17 +25,17 @@ const findAll = () => {
     return users;
 }
 
-// Função para buscar um usuário por ID
+// Função para buscar um usuário por ID no bando de dados
 const findById = (id) => {
     return users.find(user => user.id === id)
 }
 
-// Função para buscar um usuário por nome
+// Função para buscar um usuário por nome no banco de dados
 const findByName = (nome) => {
     return users.find(user => user.nome === nome)
 }
 
-// Função para adicionar um novo usuario
+// Função para adicionar um novo usuario no banco de dados
 const createNewUser = (newUser) => {
     const newId = users.length > 0 ? users[users.length - 1].id + 1 : 1;
     // User.length > 0                              Condição de comparação, indicada pelo?
