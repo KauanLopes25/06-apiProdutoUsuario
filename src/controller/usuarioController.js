@@ -46,11 +46,11 @@ const getUserById = (req, res) => {
 
 const getUserByName = (req, res) => {
 
-    // Pegando o id que foi enviado na requisicao
-    const name = (req.params.nome)
+    // Pegando o nome que foi enviado na requisicao
+    const nome = (req.params.nome)
 
     // Chamando o metodo findById do userModel
-    const user = userModel.findByName(name)
+    const user = userModel.findByName(nome)
 
     if(user){
         // Responder com status code de 200 (Sucesso!)
