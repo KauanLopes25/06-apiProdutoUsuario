@@ -31,7 +31,7 @@ const findById = (id) => {
 }
 
 // Função para buscar um usuário por nome
-const findByName = (name) => {
+const findByName = (nome) => {
     return users.find(user => user.nome === nome)
 }
 
