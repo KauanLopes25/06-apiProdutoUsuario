@@ -34,6 +34,8 @@
 const fs = require('fs')
 // Caminho dos dados de clientes 
 const users = require('../../data/clientes.json')
+// Modulo node para criar caminhos seguros idependente do sistema operacional
+const path = require('path')
 // Caminho do dados de clientes
 const dataPath = path.join(__dirname, '../../data/clientes.json')
 
