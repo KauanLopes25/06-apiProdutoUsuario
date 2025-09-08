@@ -67,10 +67,18 @@ const createNewUser = (newUser) => {
     fs.writeFileSync(dataPath, JSON.stringify(users, null, 2), 'utf-8')
     return userWithId
 }
+// Função para atualizar os dados de um cliente no banco de dados
+const updateUser = (id,allUpdate) => {
+    if (id > 0 && id <= users.length){
+        users.id.push(...allUpdate)
+    }
+    fs.writeFileSync(dataPath, JSON.stringify(users, null, 2), 'utf-8')
+}
 
 module.exports = {
     findAll,
     findById,
     findByName,
-    createNewUser
+    createNewUser,
+    updateUser
 }

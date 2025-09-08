@@ -36,4 +36,7 @@ router.get('/nome/:nome', userController.getUserByName)
 // 4° Rota para cadastrar um cliente
 router.post('/cadastro/', userController.createUser)
 
+//5° Rota para atualizar um cliente
+router.put('/atualizar/:id', userController.putDateUser)
+
 module.exports = router

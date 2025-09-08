@@ -77,9 +77,28 @@ const createUser = (req, res) =>{
 
 }
 
+// Método co controlador para atualizar as informações do cliente
+
+const putDateUser = (req, res) => {
+    // Pegando o id que foi enviado na requisicao
+    const idUser = parseInt(req.params.id)
+
+    // Pegando os dados que foram enviados pelo Body (Corpo da Requisição)
+    const {id, nome, email, telefone, endereco, dataCadastro, ativo} = req.body
+
+    // Validar se foram enviados
+    if(id == null || nome == null || email == null || telefone == null || endereco == null || dataCadastro == null || ativo == null){
+        return res.status(400).json({mensagem: 'Nome e email são obrigatórios'})
+    } else{
+        const allUpdate = userModel.updateUser(idUser, {id, nome, email, telefone, endereco, dataCadastro, ativo})
+        res.status(201).json(allUpdate)
+    }
+}
+
 module.exports = {
     getAllUsers,
     getUserById,
     getUserByName,
-    createUser
+    createUser,
+    putDateUser
 }
