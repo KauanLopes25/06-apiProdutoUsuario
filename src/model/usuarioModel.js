@@ -35,8 +35,20 @@ const findByName = (nome) => {
     return users.find(user => user.nome === nome)
 }
 
+// Função para adicionar um novo usuario
+const createNewUser = (newUser) => {
+    const newId = users.length > 0 ? users[users.length - 1].id + 1 : 1;
+    // User.length > 0                              Condição de comparação, indicada pelo?
+    // User[user.length - 1].id + 1                 Execução caso atenda a condição de comparação
+    // :1                                           Execução caso não atenda, indicado pelo :
+    const userWithId = {id: newId, ...newUser}
+    users.push(userWithId)
+    return userWithId
+}
+
 module.exports = {
     findAll,
     findById,
-    findByName
+    findByName,
+    createNewUser
 }
