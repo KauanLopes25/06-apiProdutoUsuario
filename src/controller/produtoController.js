@@ -59,8 +59,23 @@ const getProdutoByName = (req, res) => {
     }
 }
 
+const createProduto = (req, res) =>{
+    // Pegando os dados que foram enviados pelo Body (Corpo da Requisição)
+    const {nome, descricao, preco, categoria, estoque, ativo} = req.body
+
+    // Validar se foram enviados
+    if(!nome || !descricao || !preco || !categoria || !estoque || !ativo){
+        return res.status(400).json({mensagem: 'Todos os campos devem ser preenchidos'})
+    } else{
+        const newProduto = produtoModel.createNewProduto({nome, descricao, preco, categoria, estoque, ativo})
+        res.status(201).json(newProduto)
+    }
+
+}
+
 module.exports = {
     getAllprodutos,
     getProdutoById,
-    getProdutoByName
+    getProdutoByName,
+    createProduto
 }
