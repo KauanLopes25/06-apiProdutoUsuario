@@ -29,12 +29,12 @@ const getProdutoById = (req, res) => {
     // Pegando o id que foi enviado na requisicao
     const id = parseInt(req.params.id)
 
-    // Chamando o metodo findById do userModel
+    // Chamando o metodo findById do produtoModel
     const produto = produtoModel.findById(id)
 
     if (produto) {
         // Responder com status code de 200 (Sucesso!)
-        //e devolver os dados do usuario em forma json
+        //e devolver os dados do produto em forma json
         res.status(200).json(produto)
     } else {
         res.status(404).json({ mensagem: 'Produto não encontrado no banco de dados!' })

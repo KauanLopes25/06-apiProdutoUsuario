@@ -28,7 +28,7 @@ const produtoController = require('..//controller/produtoController')
 router.get('/', produtoController.getAllprodutos)
 
 // 2° Rota para obter dados de um produto por ID
-router.get('/id/:id', produtoController.getProdutoById)
+router.get('/:id', produtoController.getProdutoById)
 
 
 module.exports = router

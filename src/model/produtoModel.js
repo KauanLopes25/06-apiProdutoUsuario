@@ -39,12 +39,17 @@ const path = require('path')
 // Caminho do dados de clientes
 const dataPath = path.join(__dirname, '../../data/produtos.json')
 
-// Função para retornar todos os produtos
+// Função para retornar todos os produtos do banco de dados
 const findAll = () => {
     return produtos;
 }
 
+// Função para buscar e retornar um produto pelo ID no banco de dados
+const findById = (id) => {
+    return produtos.find(produto => produto.id === id)
+}
 
 module.exports = {
-    findAll
+    findAll,
+    findById
 }
