@@ -1,93 +1,101 @@
 [
-    {
-      "id": 1,
-      "nome": "Notebook Dell Inspiron",
-      "descricao": "Notebook com processador Intel i5, 8GB RAM e SSD de 256GB",
-      "preco": 3899.90,
-      "categoria": "Informática",
-      "estoque": 12,
-      "ativo": true
-    },
-    {
-      "id": 2,
-      "nome": "Mouse Gamer Redragon",
-      "descricao": "Mouse gamer com 7 botões programáveis e iluminação RGB",
-      "preco": 149.90,
-      "categoria": "Periféricos",
-      "estoque": 45,
-      "ativo": true
-    },
-    {
-      "id": 3,
-      "nome": "Cadeira Ergonômica",
-      "descricao": "Cadeira para escritório com ajuste de altura e apoio lombar",
-      "preco": 899.00,
-      "categoria": "Móveis",
-      "estoque": 5,
-      "ativo": false
-    },
-    {
-      "id": 4,
-      "nome": "Monitor LG UltraWide",
-      "descricao": "Monitor 29 polegadas ultrawide, resolução Full HD",
-      "preco": 1599.00,
-      "categoria": "Informática",
-      "estoque": 8,
-      "ativo": true
-    },
-    {
-      "id": 5,
-      "nome": "Teclado Mecânico HyperX",
-      "descricao": "Teclado mecânico com switches red e iluminação RGB",
-      "preco": 499.90,
-      "categoria": "Periféricos",
-      "estoque": 30,
-      "ativo": true
-    },
-    {
-      "id": 6,
-      "nome": "Smartphone Samsung Galaxy S23",
-      "descricao": "Celular com 256GB de armazenamento e câmera tripla",
-      "preco": 4899.00,
-      "categoria": "Celulares",
-      "estoque": 15,
-      "ativo": true
-    },
-    {
-      "id": 7,
-      "nome": "Fone de Ouvido Bluetooth JBL",
-      "descricao": "Headset sem fio com cancelamento de ruído ativo",
-      "preco": 899.90,
-      "categoria": "Áudio",
-      "estoque": 25,
-      "ativo": true
-    },
-    {
-      "id": 8,
-      "nome": "Impressora Epson EcoTank",
-      "descricao": "Impressora multifuncional com tanque de tinta recarregável",
-      "preco": 1299.00,
-      "categoria": "Escritório",
-      "estoque": 10,
-      "ativo": false
-    },
-    {
-      "id": 9,
-      "nome": "Mesa Gamer ThunderX",
-      "descricao": "Mesa com design gamer, suporte para monitores duplos",
-      "preco": 749.00,
-      "categoria": "Móveis",
-      "estoque": 6,
-      "ativo": true
-    },
-    {
-      "id": 10,
-      "nome": "HD Externo Seagate 2TB",
-      "descricao": "Armazenamento portátil USB 3.0",
-      "preco": 459.90,
-      "categoria": "Armazenamento",
-      "estoque": 20,
-      "ativo": true
-    }
-  ]
-  
+  {
+    "id": 1,
+    "nome": "Notebook Dell Inspiron",
+    "descricao": "Notebook com processador Intel i5, 8GB RAM e SSD de 256GB",
+    "preco": 3899.9,
+    "categoria": "Informática",
+    "estoque": 12,
+    "ativo": true
+  },
+  {
+    "id": 2,
+    "nome": "Mouse Gamer Redragon",
+    "descricao": "Mouse gamer com 7 botões programáveis e iluminação RGB",
+    "preco": 149.9,
+    "categoria": "Periféricos",
+    "estoque": 45,
+    "ativo": true
+  },
+  {
+    "id": 3,
+    "nome": "Cadeira Ergonômica",
+    "descricao": "Cadeira para escritório com ajuste de altura e apoio lombar",
+    "preco": 899,
+    "categoria": "Móveis",
+    "estoque": 5,
+    "ativo": false
+  },
+  {
+    "id": 4,
+    "nome": "Monitor LG UltraWide",
+    "descricao": "Monitor 29 polegadas ultrawide, resolução Full HD",
+    "preco": 1599,
+    "categoria": "Informática",
+    "estoque": 8,
+    "ativo": true
+  },
+  {
+    "id": 5,
+    "nome": "Teclado Mecânico HyperX",
+    "descricao": "Teclado mecânico com switches red e iluminação RGB",
+    "preco": 499.9,
+    "categoria": "Periféricos",
+    "estoque": 30,
+    "ativo": true
+  },
+  {
+    "id": 6,
+    "nome": "Smartphone Samsung Galaxy S23",
+    "descricao": "Celular com 256GB de armazenamento e câmera tripla",
+    "preco": 4899,
+    "categoria": "Celulares",
+    "estoque": 15,
+    "ativo": true
+  },
+  {
+    "id": 7,
+    "nome": "Fone de Ouvido Bluetooth JBL",
+    "descricao": "Headset sem fio com cancelamento de ruído ativo",
+    "preco": 899.9,
+    "categoria": "Áudio",
+    "estoque": 25,
+    "ativo": true
+  },
+  {
+    "id": 8,
+    "nome": "Impressora Epson EcoTank",
+    "descricao": "Impressora multifuncional com tanque de tinta recarregável",
+    "preco": 1299,
+    "categoria": "Escritório",
+    "estoque": 10,
+    "ativo": false
+  },
+  {
+    "id": 9,
+    "nome": "Mesa Gamer ThunderX",
+    "descricao": "Mesa com design gamer, suporte para monitores duplos",
+    "preco": 749,
+    "categoria": "Móveis",
+    "estoque": 6,
+    "ativo": true
+  },
+  {
+    "id": 10,
+    "nome": "HD Externo Seagate 2TB",
+    "descricao": "Armazenamento portátil USB 3.0",
+    "preco": 459.9,
+    "categoria": "Armazenamento",
+    "estoque": 20,
+    "ativo": true
+  },
+  {
+    "id": 11,
+    "nome": "Cadeira LUPA",
+    "descricao": "Cadeira gamer para profissionais",
+    "preco": 1449.9,
+    "categoria": "Movel",
+    "estoque": 20,
+    "ativo": true
+  }
+]
