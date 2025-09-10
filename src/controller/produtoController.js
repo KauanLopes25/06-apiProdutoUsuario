@@ -16,7 +16,7 @@
 
 ********************************************************************************************/// Importação das funções presentes no userModel
 const produtoModel = require('../model/produtoModel')
-const {use} = require('../routes/produtoRoutes')
+const { use } = require('../routes/produtoRoutes')
 
 // Controlador para listar todos os produtos
 const getAllprodutos = (req, res) => {
@@ -24,7 +24,25 @@ const getAllprodutos = (req, res) => {
     res.status(200).json(produtos)
 }
 
+// Função para o controlador obter o id do produto
+const getProdutoById = (req, res) => {
+    // Pegando o id que foi enviado na requisicao
+    const id = parseInt(req.params.id)
+
+    // Chamando o metodo findById do userModel
+    const produto = produtoModel.findById(id)
+
+    if (produto) {
+        // Responder com status code de 200 (Sucesso!)
+        //e devolver os dados do usuario em forma json
+        res.status(200).json(produto)
+    } else {
+        res.status(404).json({ mensagem: 'Produto não encontrado no banco de dados!' })
+    }
+}
+
 
 module.exports = {
-    getAllprodutos
+    getAllprodutos,
+    getProdutoById
 }
