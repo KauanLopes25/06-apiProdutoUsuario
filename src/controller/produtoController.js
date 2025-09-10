@@ -73,9 +73,26 @@ const createProduto = (req, res) =>{
 
 }
 
+const putDateProduto = (req, res) => {
+    // Pegando o id que foi enviado na requisicao
+    const idProduto = parseInt(req.params.id)
+
+    // Pegando os dados que foram enviados pelo Body (Corpo da Requisição)
+    const {id, nome, descricao, preco, categoria, estoque, ativo} = req.body
+
+    // Validar se foram enviados
+    if(id == null || nome == null || descricao == null || preco == null || categoria == null || estoque == null || ativo == null){
+        return res.status(400).json({mensagem: 'Todos os campos devem ser informados'})
+    } else{
+        const allUpdate = produtosModel.updateUser(idProduto, {id, nome, descricao, preco, categoria, estoque, ativo})
+        res.status(201).json(allUpdate)
+    }
+}
+
 module.exports = {
     getAllprodutos,
     getProdutoById,
     getProdutoByName,
-    createProduto
+    createProduto,
+    putDateProduto
 }
