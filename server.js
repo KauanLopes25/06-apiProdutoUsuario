@@ -26,6 +26,7 @@ const express = require('express')
 
 // Importar as rotas de usuário
 const userRoutes = require('./src/routes/usuarioRoutes')
+const produtoRoutes = require('./src/routes/produtoRoutes')
 
 // Criar uma aplicação express
 const app = express()
@@ -46,5 +47,8 @@ app.listen(porta, () => {
     console.log(`Servidor rodando em http://localhost:${porta}`)
 })
 
-// Definindo a rotas padrão de usuario
+// Definindo a rotas padrão de usuarios
 app.use('/api/users', userRoutes)
+
+// Definindo a rotas padrão de produtos
+app.use('api/produto', produtoRoutes)
