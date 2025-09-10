@@ -23,3 +23,9 @@ const router = express.Router();
 const produtoController = require('..//controller/produtoController')
 
 // Criando as rotas da nossa API
+
+// 1° Rota para obter todos os produtos
+router.get('/', produtoController.getAllprodutos)
+
+
+module.exports = router
