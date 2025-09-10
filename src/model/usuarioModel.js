@@ -84,10 +84,27 @@ const updateUser = (id, updatedFields) => {
     return users[index]
 }
 
+// Função para deletar os dados de um cliente no banco de dados
+const deleteUser = (id) => {
+    const index = users.findIndex(u => u.id === id)
+
+    if (index === -1) {
+      return null // Cliente não encontrado
+    }
+     // Remove o cliente do array
+  const deletedUser = users.splice(index, 1)[0]
+
+  // Salva o JSON atualizado no arquivo
+  fs.writeFileSync(dataPath, JSON.stringify(users, null, 2), 'utf-8')
+
+  return deletedUser
+}
+
 module.exports = {
     findAll,
     findById,
     findByName,
     createNewUser,
-    updateUser
+    updateUser,
+    deleteUser
 }

@@ -77,7 +77,7 @@ const createUser = (req, res) =>{
 
 }
 
-// Método co controlador para atualizar as informações do cliente
+// Método do controlador para atualizar as informações do cliente
 
 const putDateUser = (req, res) => {
     // Pegando o id que foi enviado na requisicao
@@ -95,10 +95,30 @@ const putDateUser = (req, res) => {
     }
 }
 
+// Função do controlador para deletar informações do cliente
+
+const deleteUserController = (req, res) => {
+    // Pegando o id que foi enviado na requisicao
+    const idUser = parseInt(req.params.id)
+
+    // Enviando o ID para o userModel
+    userModel.deleteUser(idUser)
+    
+    if(idUser){
+        // Responder com status code de 200 (Sucesso!)
+        //e devolver os dados do usuario em forma json
+        res.status(200).json({mensagem: 'Usuário deletado com sucesso'})
+    } else{
+        res.status(404).json({ mensagem: 'Usuário não encontrado no banco de dados!'})
+    }
+
+}
+
 module.exports = {
     getAllUsers,
     getUserById,
     getUserByName,
     createUser,
-    putDateUser
+    putDateUser,
+    deleteUserController
 }

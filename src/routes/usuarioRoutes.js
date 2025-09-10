@@ -39,4 +39,7 @@ router.post('/cadastro/', userController.createUser)
 //5° Rota para atualizar um cliente
 router.put('/atualizar/:id', userController.putDateUser)
 
+//6° Rota para deletar um cliente
+router.delete('/deletar/:id', userController.deleteUserController)
+
 module.exports = router

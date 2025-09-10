@@ -88,14 +88,5 @@
     "endereco": "Rua T-63, 500 - Setor Bueno, Goiânia - GO, 74230-120",
     "dataCadastro": "2025-01-05T08:40:00Z",
     "ativo": false
-  },
-  {
-    "id": 11,
-    "nome": "Kauan Lopes Pereira",
-    "email": "kauan.lopes02@bol.com.br",
-    "telefone": "(11) 96542-3634",
-    "endereco": "Rua das Dores, 120 - Jardim Alivio, São Vasco - SP, 01313-000",
-    "dataCadastro": "2025-09-01T10:30:00Z",
-    "ativo": true
   }
 ]
