@@ -15,5 +15,5 @@
 
 
 ********************************************************************************************/// Importação das funções presentes no userModel
-const userModel = require('../model/produtoModel')
+const produtoModel = require('../model/produtoModel')
 const {use} = require('../routes/produtoRoutes')

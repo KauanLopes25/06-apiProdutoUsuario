@@ -33,7 +33,7 @@
 // Constante para ler e escrever em arquivos
 const fs = require('fs')
 // Caminho dos dados de clientes 
-const users = require('../../data/produtos.json')
+const produtos = require('../../data/produtos.json')
 // Modulo node para criar caminhos seguros idependente do sistema operacional
 const path = require('path')
 // Caminho do dados de clientes
