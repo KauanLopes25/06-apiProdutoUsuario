@@ -68,11 +68,20 @@ const createNewUser = (newUser) => {
     return userWithId
 }
 // Função para atualizar os dados de um cliente no banco de dados
-const updateUser = (id,allUpdate) => {
-    if (id > 0 && id <= users.length){
-        users.id.push(...allUpdate)
+const updateUser = (id, updatedFields) => {
+    const index = users.findIndex(u => u.id === id)
+  
+    if (index === -1) {
+      return null // cliente não encontrado
     }
+  
+    // Atualiza apenas os campos enviados
+    users[index] = { ...users[index], ...updatedFields }
+  
+    // Salva o array atualizado no arquivo JSON
     fs.writeFileSync(dataPath, JSON.stringify(users, null, 2), 'utf-8')
+  
+    return users[index]
 }
 
 module.exports = {

@@ -88,7 +88,7 @@ const putDateUser = (req, res) => {
 
     // Validar se foram enviados
     if(id == null || nome == null || email == null || telefone == null || endereco == null || dataCadastro == null || ativo == null){
-        return res.status(400).json({mensagem: 'Nome e email são obrigatórios'})
+        return res.status(400).json({mensagem: 'Todos os campos devem ser informados'})
     } else{
         const allUpdate = userModel.updateUser(idUser, {id, nome, email, telefone, endereco, dataCadastro, ativo})
         res.status(201).json(allUpdate)
