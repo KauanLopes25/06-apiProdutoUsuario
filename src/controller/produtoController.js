@@ -41,8 +41,26 @@ const getProdutoById = (req, res) => {
     }
 }
 
+// Função do controlador para obter o nome do produto
+const getProdutoByName = (req, res) => {
+
+    // Pegando o nome que foi enviado na requisição
+    const nome = (req.params.nome)
+
+    // Chamando o metodo findByName do user model
+    const produto = produtoModel.findByName(nome)
+    
+    if (produto) {
+        // Responder com status code de 200 (Sucesso!)
+        //e devolver os dados do produto em forma json
+        res.status(200).json(produto)
+    } else {
+        res.status(404).json({ mensagem: 'Produto não encontrado no banco de dados!' })
+    }
+}
 
 module.exports = {
     getAllprodutos,
-    getProdutoById
+    getProdutoById,
+    getProdutoByName
 }
