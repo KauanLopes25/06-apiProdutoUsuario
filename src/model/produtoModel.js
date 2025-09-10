@@ -54,8 +54,23 @@ const findByName = (nome) => {
     return produtos.find(produto => produto.nome === nome)
 }
 
+// Função para cadastrar um produto no banco de dados
+const createNewProduto = (newProduto) => {
+    const newId = produtos.length > 0 ? produtos[produtos.length - 1].id + 1 : 1;
+    // produtos.length > 0                          Condição de comparação, indicada pelo?
+    // produtos[produtos.length - 1].id + 1         Execução caso atenda a condição de comparação
+    // :1                                           Execução caso não atenda, indicado pelo :
+    const produtoWithId = { id: newId, ...newProduto }
+    // Atualiza os dados na memória RAM
+    produtos.push(produtoWithId)
+    // Atualiza os dados no disco
+    fs.writeFileSync(dataPath, JSON.stringify(produtos, null, 2), 'utf-8')
+    return produtoWithId
+}
+
 module.exports = {
     findAll,
     findById,
-    findByName
+    findByName,
+    createNewProduto
 }
