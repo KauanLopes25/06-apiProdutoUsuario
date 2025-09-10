@@ -30,5 +30,8 @@ router.get('/', produtoController.getAllprodutos)
 // 2° Rota para obter dados de um produto por ID
 router.get('/:id', produtoController.getProdutoById)
 
+// 3° Rota para obter dados de um produto por nome
+router.get('/nome/:nome', produtoController.getProdutoByName)
+
 
 module.exports = router
