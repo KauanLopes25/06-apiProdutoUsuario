@@ -68,9 +68,27 @@ const createNewProduto = (newProduto) => {
     return produtoWithId
 }
 
+// Função para atualizar os dados de um cliente no banco de dados
+const updateProduto = (id, updatedFields) => {
+    const index = produtos.findIndex(p => p.id === id)
+  
+    if (index === -1) {
+      return null // cliente não encontrado
+    }
+  
+    // Atualiza apenas os campos enviados
+    produtos[index] = { ...produtos[index], ...updatedFields }
+  
+    // Salva o array atualizado no arquivo JSON
+    fs.writeFileSync(dataPath, JSON.stringify(produtos, null, 2), 'utf-8')
+  
+    return produtos[index]
+}
+
 module.exports = {
     findAll,
     findById,
     findByName,
-    createNewProduto
+    createNewProduto,
+    updateProduto
 }
