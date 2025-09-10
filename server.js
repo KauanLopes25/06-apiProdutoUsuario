@@ -51,4 +51,4 @@ app.listen(porta, () => {
 app.use('/api/users', userRoutes)
 
 // Definindo a rotas padrão de produtos
-app.use('api/produtos', produtoRoutes)
+app.use('/api/produtos', produtoRoutes)
