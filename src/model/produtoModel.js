@@ -49,7 +49,13 @@ const findById = (id) => {
     return produtos.find(produto => produto.id === id)
 }
 
+// Função para buscar um produto por noem no banco de dados
+const findByName = (nome) => {
+    return produtos.find(produto => produto.nome === nome)
+}
+
 module.exports = {
     findAll,
-    findById
+    findById,
+    findByName
 }
