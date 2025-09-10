@@ -17,3 +17,14 @@
 ********************************************************************************************/// Importação das funções presentes no userModel
 const produtoModel = require('../model/produtoModel')
 const {use} = require('../routes/produtoRoutes')
+
+// Controlador para listar todos os produtos
+const getAllprodutos = (req, res) => {
+    const produto = produtoModel.findAll()
+    res.status(200).json(produto)
+}
+
+
+module.exports = {
+    getAllprodutos
+}
